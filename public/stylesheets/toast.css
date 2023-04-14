@@ -1,0 +1,45 @@
+#toaster {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 400px;
+    padding: 0px 14px;
+    z-index: 9001;
+}
+
+
+/*#toaster div {
+  height: 0px;
+  opacity: 0;
+  transition-property: opacity, height;
+  transition-duration: 2s, 2s;
+}*/
+
+#toaster .toast {
+    color: #333;
+    text-shadow: 0px 1px 0px rgb(255, 255, 255);
+    background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+    position: relative;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#toaster .toast.warning {
+    color: #fff;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(to bottom, #ee5f5b 0%, #bd362f 100%);
+}
+
+#toaster .toast.info {
+    color: #fff;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to bottom, #93cede 0%, #75bdd1 41%, #49a5bf 100%);
+}
+
+#toaster .toast.alert {
+    text-shadow: 0px 1px 0px rgb(255, 255, 255);
+    background: linear-gradient(to bottom, #ffff88 0%, #ffff88 100%);
+}

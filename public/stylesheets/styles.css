@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.page {
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+.inner {
+  background-image: url("/images/homepageBg2.jpg");
+  background-size: contain;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: inset 0 0 500px #171614;
+  overflow: hidden;
+  z-index: -1;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* This class is added on scroll */
+.fixed {
+  position: fixed;
+  top: 0;
+  height: 100px;
+  z-index: 1;
+}
+
+body {
+  font-family: "open-sans-bold", AvenirNext-Medium, sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Navigation Settings */
+nav {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: #BAFF29;
+}
+
+nav li {
+  display: inline-block;
+  padding: 40px 24px;
+}
+
+nav li a {
+  color: #757575;
+  text-transform: uppercase;
+}
+
+section {
+  height: 100vh;
+}
+
+@media only screen and (max-width: 520px) {
+  nav li {
+    padding: 24px 4px;
+  }
+  nav li a {
+    font-size: 14px;
+  }
+}
+.vignette {
+  z-index: 9999 !important;
+  box-shadow: inset 0 0 120px #000, inset 0 0 80px #000, inset 0 0 40px #000;
+}

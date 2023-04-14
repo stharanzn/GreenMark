@@ -1,0 +1,38 @@
+
+<!-- Realtime Database -->
+users{
+    $uid{
+        Posts{
+            $postId1,
+            $postId2
+        }
+    }
+}
+
+public{
+    $uid{
+        publicData{
+            carbonCredit,
+            handle,
+            carbonOffsetted,
+            leaderboardRanking,
+            
+        }
+    }
+}
+
+
+<!-- Posts -->
+Posts{
+    $postID{
+        postTime,
+        postDate,
+        postStats[likes, comments, shares],
+        postImagesNo,
+        postImagesLinks[link1, link2],
+        tags[tag1, tag2],
+        postLocation,
+        postTitle,
+        postCaption
+    }
+}
