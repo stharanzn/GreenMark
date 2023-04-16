@@ -155,12 +155,15 @@ function setIntroBox(data){
     return intro
 }
 
+const localhostServer= 'http://localhost:4000/profile/pdata/dashboard'
+const deployedAzureServer = "https://greenmark.azurewebsites.net/profile/pdata/dashboard"
+
 export function setPage(_uid){
     console.log("Setting page")
 
     
 
-    fetch('http://localhost:4000/profile/pdata/dashboard', {
+    fetch(deployedAzureServer, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

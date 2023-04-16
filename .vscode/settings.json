@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/0b571f88-eceb-4d87-9c88-6d6d16960358/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/GreenMark",
+    "appService.deploySubpath": "."
+}
