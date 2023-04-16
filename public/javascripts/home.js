@@ -73,7 +73,7 @@ function assignUsername(_name,_uid){
     // document.getElementById("username").innerHTML = _name;
     if((window.location.href == window.location.protocol + "//" +window.location.host + "/profile") && localStorage.getItem("loggedIn")){    
 
-        setTimeout(window.location.href = window.location.protocol + "//" + window.location.host + "/profile/" + _name, 5000)
+        // setTimeout(window.location.href = window.location.protocol + "//" + window.location.host + "/profile/" + _name, 5000)
         // document.getElementById("registerFragment").style.display = "none"
         // document.getElementById("btnSignout").style.display = "block"
     }
