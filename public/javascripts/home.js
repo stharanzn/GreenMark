@@ -13,7 +13,8 @@ const firebaseConfig = {
     appId: process.env.APP_ID_FIREBASE,
     measurementId: process.env.MEASUREMENT_ID_FIREBASE,
   };
-  
+
+
   
 const firebaseApp = initializeApp(firebaseConfig);
 const auth = getAuth(firebaseApp)

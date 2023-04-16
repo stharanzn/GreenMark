@@ -1,4 +1,3 @@
-
 # Green Mark
 
 ## Description
@@ -15,6 +14,7 @@ In addition to the carbon offsetting platform, Greenmark also provides education
 
 # Green Mark marketplace
 This is a Carbon Offsetting Marketplace application developed for the GFG solve for India hackathon. The application aims to provide a platform for individuals and organizations to buy and sell carbon offsets, helping to reduce greenhouse gas emissions and combat climate change.
+
 
 ## Features
 * User registration and authentication
@@ -54,6 +54,10 @@ To install and run the application on your local machine, follow these steps:
 
 6. Access the application on your web browser at:
 > http://localhost:4000/
+
+### Note
+This project was supposed to be deployed on the google AMD instance, but we were not able to enable the billing system in the google account 
+and therefore were not able to create an AMD instance, therefore we have deployed it in azure for the submission of the first round.
 
 # License
 This project is licensed under the _MIT License._

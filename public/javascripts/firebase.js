@@ -7,6 +7,7 @@ import { popupToast } from "./common.js";
 
 const gProvider = new GoogleAuthProvider();
 
+
 const firebaseConfig = {
     apiKey: process.env.API_KEY_FIREBASE,
     authDomain: process.env.AUTH_DOMAIN_FIREBASE,
@@ -17,7 +18,7 @@ const firebaseConfig = {
     appId: process.env.APP_ID_FIREBASE,
     measurementId: process.env.MEASUREMENT_ID_FIREBASE,
   };
-  
+
 const firebaseApp = initializeApp(firebaseConfig);
 const auth = getAuth(firebaseApp);
 
