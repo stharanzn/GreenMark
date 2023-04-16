@@ -55,9 +55,5 @@ To install and run the application on your local machine, follow these steps:
 6. Access the application on your web browser at:
 > http://localhost:4000/
 
-### Note
-This project was supposed to be deployed on the google AMD instance, but we were not able to enable the billing system in the google account 
-and therefore were not able to create an AMD instance, therefore we have deployed it in azure for the submission of the first round.
-
 # License
 This project is licensed under the _MIT License._
