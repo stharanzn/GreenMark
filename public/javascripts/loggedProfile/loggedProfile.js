@@ -109,7 +109,7 @@ function setDashboard(data){
               <div class="username">${data.carbonCredits} Carbon Credits</div>
              </div>
              <div class="user">
-              <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=d5849d81af587a09dbcf3f11f6fa122f" alt="" class="user-img">
+              <img src="/images/carbonCredits.jpg" alt="" class="user-img">
               <div class="username">${data.carbonOffsetted} Carbon Offseted</div>
              </div>
              <div class="user">
@@ -180,8 +180,8 @@ export function setPage(_uid){
 
         const _statusShare = setStatusShare("/images/profilePlaceholder.png", "stharanzn");
         document.getElementById("postContainer").innerHTML += _statusShare
-        const _post = getPost("/images/profilePlaceholder.png", "stharanzn", "6 hrs ago", "Science BITCHHHH!!!!", ["/images/homepageBg.jpg","/images/homepageBg2.jpg", "/images/homepageBg2F.png"], 69, 42, 0)
-        const _post2 = getPost("/images/profilePlaceholder.png", "stharanzn", "12 hrs ago", "Wow it fucking works bitch", ["/images/homepageBg.jpg","/images/homepageBg2.jpg", "/images/homepageBg2F.png"], 6996, 420,80)
+        const _post = getPost("/images/profilePlaceholder.png", "stharanzn", "6 hrs ago", "Example Post", ["/images/homepageBg.jpg","/images/homepageBg2.jpg", "/images/homepageBg2F.png"], 69, 42, 0)
+        const _post2 = getPost("/images/profilePlaceholder.png", "stharanzn", "12 hrs ago", "Example Post 2", ["/images/forestation.jpg","/images/smoke.jpg", "/images/factory-img.png"], 6996, 420,80)
         document.getElementById("postContainer").innerHTML += _post
         document.getElementById("postContainer").innerHTML += _post2
 
