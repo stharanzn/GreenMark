@@ -13,4 +13,8 @@ router.get('/marketplace', function(req , res , next){
   res.render('marketplace',{username: req.params.username});
 });
 
+router.get('/payments', function(req , res , next){
+  res.render('payments',{username: req.params.username});
+});
+
 module.exports = router;

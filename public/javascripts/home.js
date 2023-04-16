@@ -18,12 +18,12 @@ const firebaseConfig = {
 const firebaseApp = initializeApp(firebaseConfig);
 const auth = getAuth(firebaseApp)
 
-// checkLoggedIn();
+checkLoggedIn();
 
 function checkLoggedIn(){
     if(localStorage.getItem("loggedIn") == "true"){
         console.log("logged in ")
-        assignUsername(localStorage.getItem("_userName"));
+        // assignUsername(localStorage.getItem("_userName"));
     }else{
         
     }
@@ -55,6 +55,22 @@ onAuthStateChanged(auth, (user)=>{
     }
 })
 
+document.getElementById("signoutBtn").addEventListener('click', signoutUser)
+
+function signoutUser(){
+    auth.signOut().then(function(){
+        // popupToast(localStorage.getItem("_userName")+ " Signed out successfully...")
+        localStorage.removeItem("_userName")
+        localStorage.setItem("loggedIn", "false")
+        window.location.href = window.location.protocol + "//" + window.location.host + "/profile";
+        // document.getElementById('btnSignout').style.display = "none";
+        // setTimeout(location.reload(), 5000);
+    }, function(error){
+        console.log('signout error ', error)
+        location.reload();
+    })
+}
+
 function assignUsername(_name,_uid){
     console.log("ok its here")
     // const usernames = document.getElementsByClassName("username");
@@ -62,7 +78,13 @@ function assignUsername(_name,_uid){
     //     usernames[i].innerHTML = _name
     // }
     // document.getElementById("username").innerHTML = _name;
-    if(window.location.href == window.location.protocol + "//" +window.location.host + "/profile/" + _name){                    
+    if((window.location.href == window.location.protocol + "//" +window.location.host + "/profile") && localStorage.getItem("loggedIn")){    
+
+        setTimeout(window.location.href = window.location.protocol + "//" + window.location.host + "/profile/" + _name, 5000)
+        // document.getElementById("registerFragment").style.display = "none"
+        // document.getElementById("btnSignout").style.display = "block"
+    }
+    else if(window.location.href == window.location.protocol + "//" +window.location.host + "/profile/" + _name){                    
         setPage(_uid);
         // document.getElementById("registerFragment").style.display = "none"
         // document.getElementById("btnSignout").style.display = "block"

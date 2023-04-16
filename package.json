@@ -8,6 +8,7 @@
   "dependencies": {
     "@paypal/checkout-server-sdk": "^1.0.3",
     "@paypal/paypal-js": "^5.1.6",
+    "@taquito/signer": "^16.1.1",
     "@taquito/taquito": "^16.1.1",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
@@ -16,7 +17,8 @@
     "firebase": "^9.19.1",
     "firebase-admin": "^11.6.0",
     "http-errors": "~1.6.3",
-    "morgan": "~1.9.1"
+    "morgan": "~1.9.1",
+    "paypal-rest-sdk": "^1.8.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"

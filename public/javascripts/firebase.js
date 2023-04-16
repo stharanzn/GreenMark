@@ -55,12 +55,11 @@ export function createNewUser(method = 0, email=null, password=null, username=nu
             popupToast(`Account created successfully...`)
 
             // setTimeout(loginExistingUser(email, password, false), 2000);
-            //TODO: add username to the below field
-            redirect(username);
-            
+            //TODO: add username to the below field                   
             
             // document.getElementById('signoutBtn').style.display = "block";
             console.log("Logged in using mail successfully...");
+            setTimeout(redirect(username), 3000);
         }).catch((err)=>{
             console.log(err)
             console.log('here error')
@@ -225,7 +224,6 @@ export async function getUserData(){
         }
     })
 }
-
 
 
 function getHashedPass(_pass){
