@@ -34,3 +34,26 @@ This is a Carbon Offsetting Marketplace application developed for the GFG solve 
 
 # Installation
 To install and run the application on your local machine, follow these steps:
+
+1. Clone the repository to your local machine:
+> git clone https://github.com/stharanzn/GreenMark.git
+
+2. Navigate to the project directory:
+> cd GreenMark
+
+3. Install the necessary dependencies:
+> npm i
+
+4. Set up environment variables:
+> firebase configuration variables
+> paypal client id 
+> paypal client sceret
+
+5. Run the application:
+> npm start
+
+6. Access the application on your web browser at:
+> http://localhost:4000/
+
+# License
+This project is licensed under the _MIT License._
