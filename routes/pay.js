@@ -5,8 +5,8 @@ const taquito = require('@taquito/taquito');
 const { InMemorySigner } = require('@taquito/signer');
 const Tezos = require('@taquito/taquito').Tezos;
 
-const PAYPAL_CLIENT_ID = 'ARR5sOY7MLDDa-muXKxNxUwNW7Ws1as4xal1HP3Z5JTlTKn4ayhLG5q25aFsYOWS2UGnLg3FtAlvlb5L';
-const PAYPAL_CLIENT_SECRET = 'EGgQNW0Ak28sV39OkyLG2jhDcmSkhuhSB-F2zZxU7X_hXqUB9jyZ8m6lmekGguAm1vR9WC08nHoOHVdv';
+const PAYPAL_CLIENT_ID = _PAYPAL_CLIENT_ID;
+const PAYPAL_CLIENT_SECRET = _PAYPAL_CLIENT_SECRET;
 
 
 // Configure PayPal SDK

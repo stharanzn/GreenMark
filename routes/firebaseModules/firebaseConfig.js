@@ -11,14 +11,7 @@ function getHashedPass(_pass){
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDuBvT4uGR5ID65M3WF-hYRz7wtMjEvz-0",
-  authDomain: "balmy-cab-379807.firebaseapp.com",
-  databaseURL: "https://balmy-cab-379807-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "balmy-cab-379807",
-  storageBucket: "balmy-cab-379807.appspot.com",
-  messagingSenderId: "210758699381",
-  appId: "1:210758699381:web:fb6d4ddecae18493af2b3c",
-  measurementId: "G-CSERM56TVL"
+
 };
 
 // Initialize Firebase
