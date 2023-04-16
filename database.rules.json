@@ -1,0 +1,22 @@
+{
+  "rules": {
+    "users": {
+      "$uid":{
+        "accData":{
+          ".read": "auth!=null",
+        	".write": "$uid === auth.uid"
+        }        
+      }
+      
+    },
+    "public":{
+      "$uid":{
+        "data":{
+          
+          ".read":"true",
+            ".write": "$uid === auth.uid"
+        }
+      }
+    }
+  }
+}
