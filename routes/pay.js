@@ -4,9 +4,10 @@ const paypal = require('paypal-rest-sdk');
 const taquito = require('@taquito/taquito');
 const { InMemorySigner } = require('@taquito/signer');
 const Tezos = require('@taquito/taquito').Tezos;
+require('dotenv').config();
 
-const PAYPAL_CLIENT_ID = _PAYPAL_CLIENT_ID;
-const PAYPAL_CLIENT_SECRET = _PAYPAL_CLIENT_SECRET;
+const PAYPAL_CLIENT_ID = process.env._PAYPAL_CLIENT_ID;
+const PAYPAL_CLIENT_SECRET = process.env._PAYPAL_CLIENT_SECRET;
 
 
 // Configure PayPal SDK

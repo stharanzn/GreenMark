@@ -4,6 +4,7 @@ const { initializeApp } = require("firebase/app");
 const {getAuth, createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, onAuthStateChanged, signInWithEmailAndPassword } = require('firebase/auth');
 const {getDatabase, ref, set, child, get, onValue} = require("firebase/database");
 // const {popupToast} = require('../../public/javascripts/common.js')
+require('dotenv').config();
 
 function getHashedPass(_pass){
     return `${_pass}123"`;
@@ -11,8 +12,15 @@ function getHashedPass(_pass){
 
 
 const firebaseConfig = {
-
-};
+    apiKey: process.env.API_KEY_FIREBASE,
+    authDomain: process.env.AUTH_DOMAIN_FIREBASE,
+    databaseURL: process.env.DATABASE_URL_FIREBASE,
+    projectId: process.env.PROJECT_ID_FIREBASE,
+    storageBucket: process.env.STORAGE_BUCKET_FIREBASE,
+    messagingSenderId: process.env.MESSAGING_SENDER_ID_FIREBASE,
+    appId: process.env.APP_ID_FIREBASE,
+    measurementId: process.env.MEASUREMENT_ID_FIREBASE,
+  };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
